@@ -1,0 +1,26 @@
+[user]
+	name = VladMerk
+	email = merkvladimir@gmail.com
+[init]
+	defaultBranch = master
+[diff]
+	tool = meld
+[core]
+	pager = 
+	editor = nvim
+[difftool]
+	prompt = false
+[merge]
+	tool = meld
+[alias]
+	co = checkout
+	cm = commit -m
+	st = status
+	cam = commit -a -m
+	loga = log --oneline --graph --all
+	br = branch
+	lo = log --oneline
+[pull]
+	ff = only
+[push]
+	autoSetupRemote = true
