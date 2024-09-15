@@ -52,3 +52,4 @@ nnoremap <C-H> <C-W><C-H>
 
 nnoremap ,ff <cmd>Telescope find_files<cr>
 nnoremap ,fg <cmd>Telescope live_grep<cr>
+
