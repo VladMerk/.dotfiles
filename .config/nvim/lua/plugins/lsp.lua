@@ -3,6 +3,7 @@ local lspconfig = require("lspconfig")
 
 lspconfig.pyright.setup {}
 
+
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', '<leader>l', vim.diagnostic.open_float)
@@ -38,3 +39,17 @@ vim.api.nvim_create_autocmd('LspAttach', {
                        function() vim.lsp.buf.format {async = true} end, opts)
     end
 })
+
+lspconfig.ruff_lsp.setup {
+    init_options = {
+        settings = {
+            args = {
+                "--select=E,F,UP,N,I,ASYNC,S,PTH",
+                "--line-length=120",
+                "respect-gitignore",
+            },
+            fixAll = false,
+            organizeImports = true,
+        }
+    }
+}

@@ -60,6 +60,35 @@ require("lazy").setup({
     -- BufferLine - строка вкладок
     {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
         
+    -- Toggle Terminal
+    {"akinsho/toggleterm.nvim", version = "*", config = true},
+
+    -- Telescope - поиск файлов и выражений
+    {
+        "nvim-telescope/telescope.nvim", branch = "0.1.x",
+        dependencies = {"nvim-lua/plenary.nvim"},
+    },
+
+    -- Autocomplete support
+    {"hrsh7th/cmp-nvim-lsp"},
+    {"hrsh7th/cmp-buffer"},
+    {"hrsh7th/cmp-path"},
+    {"hrsh7th/cmp-cmdline"},
+    {"hrsh7th/nvim-cmp"},
+
+    -- Mason
+    {
+        "williamboman/mason.nvim",
+    },
+
+    -- Git Sign
+    {'lewis6991/gitsigns.nvim'},
+
+    -- Mini - автозакрытие скобок
+    { 'echasnovski/mini.nvim', version = false },
+    { 'echasnovski/mini.move', version = false },
+    { 'echasnovski/mini.pairs', version = false },
+
 })
 
 
