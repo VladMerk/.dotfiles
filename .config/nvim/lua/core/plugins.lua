@@ -89,6 +89,16 @@ require("lazy").setup({
     { 'echasnovski/mini.move', version = false },
     { 'echasnovski/mini.pairs', version = false },
 
+    -- Flog - красота для Git
+    {
+        "rbong/vim-flog",
+        lazy = true,
+        cmd = { "Flog", "Flogsplit", "Floggit" },
+        dependencies = {
+            "tpope/vim-fugitive",
+        },
+    },
+
 })
 
 
