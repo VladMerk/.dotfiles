@@ -5,6 +5,9 @@ vim.keymap.set("n", "<leader>k", ":noh<CR>")
 
 vim.keymap.set({"n", "i"}, "<C-s>", "<cmd>:w<CR>")
 
+vim.keymap.set("n", "<C-j>", "5j")
+vim.keymap.set("n", "<C-k>", "5k")
+
 -- NeoTree
 vim.keymap.set("n", "<leader>e", ":Neotree left focus<CR>")
 vim.keymap.set("n", "<leader>t", ":Neotree float focus<CR>")
@@ -21,3 +24,9 @@ vim.keymap.set('n', '<leader>s', ':ToggleTerm direction=float<CR>')
 
 -- Ruff LSP
 vim.keymap.set('n', "<leader>a", ":lua vim.lsp.buf.code_action()<CR>")
+
+-- Fold all text
+vim.keymap.set('n', 'zR', require('ufo').openAllFolds)
+vim.keymap.set('n', 'zM', require('ufo').closeAllFolds)
+
+
