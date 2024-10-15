@@ -28,6 +28,7 @@ alias python39="/home/vlad/.local/share/Python3.9/python3.9"
 alias rmpattern="docker run --rm -v "$(pwd)":/data vladmerk/rmpattern"
 alias yas="yandex-disk sync"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias ls="exa --icons=always --color=auto --group-directories-first --long"
 
 
 remove_poetry_envs() {
