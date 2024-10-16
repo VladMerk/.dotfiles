@@ -25,6 +25,9 @@ vim.keymap.set('n', '<leader>s', ':ToggleTerm direction=float<CR>')
 -- Ruff LSP
 vim.keymap.set('n', "<leader>a", ":lua vim.lsp.buf.code_action()<CR>")
 
+-- CMP
+vim.keymap.set('n', "<leader>h", vim.lsp.buf.signature_help, {noremap = true, silent = true})
+
 -- Fold all text
 vim.keymap.set('n', 'zR', require('ufo').openAllFolds)
 vim.keymap.set('n', 'zM', require('ufo').closeAllFolds)
