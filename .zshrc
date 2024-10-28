@@ -29,6 +29,7 @@ alias rmpattern="docker run --rm -v "$(pwd)":/data vladmerk/rmpattern"
 alias yas="yandex-disk sync"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias ls="exa --icons=always --color=auto --group-directories-first --long"
+alias ip="ip -c"
 
 
 remove_poetry_envs() {
@@ -40,3 +41,7 @@ remove_poetry_envs() {
 export QT_AUTO_SCREEN_SCALE_FACTOR=1.25
 export QT_ENABLE_HIGHDPI_SCALING=1.25
 export QT_FONT_DPI=120
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
