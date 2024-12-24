@@ -48,3 +48,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Added by LM Studio CLI tool (lms)
 export PATH="$PATH:/home/vlad/.cache/lm-studio/bin"
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
